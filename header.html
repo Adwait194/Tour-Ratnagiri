@@ -31,7 +31,7 @@ if(u){
 a.innerHTML='<div class="user-pill"><span>'+u+'</span><button class="logout-btn" id="lob">Logout</button></div>';
 document.getElementById("lob").addEventListener("click",function(){
 localStorage.removeItem("u");
-window.top.location.href="Index.html";
+window.top.location.href="index.html";
 });
 }else{
 a.innerHTML='<a href="login.html" target="content">Login</a>';
