@@ -273,7 +273,7 @@ var u=document.getElementById("un").value.trim();
 var p=document.getElementById("pw").value.trim();
 if(!u||!p){alert("Please enter a username and password.");return;}
 localStorage.setItem("u",u);
-window.top.location.href="Index.html";
+window.top.location.href="index.html";
 }
 function sB(e){
 e.preventDefault();
