@@ -66,7 +66,7 @@ var wn=document.getElementById("welcomeName");
 if(wn)wn.textContent=u;
 if(ov)ov.classList.add("show");
 setTimeout(function(){
-window.top.location.href="Index.html";
+window.top.location.href="index.html";
 },2000);
 }
 window.addEventListener("DOMContentLoaded",function(){
