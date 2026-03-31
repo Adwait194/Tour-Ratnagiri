@@ -43,5 +43,5 @@ res.status(500).json({error:"Failed to reach Groq API. Check your internet conne
 });
 app.listen(PORT,function(){
 console.log("TourRatnagiri running at http://localhost:"+PORT);
-console.log("Open http://localhost:"+PORT+"/Index.html in your browser");
+console.log("Open http://localhost:"+PORT+"/index.html in your browser");
 });
