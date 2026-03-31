@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="gallery.css">
+<link rel="stylesheet" href="backtop.css">
+</head>
+<body>
+<h1>Tourist Places Gallery</h1>
+<p class="subtitle">Explore the natural beauty, heritage forts, ancient temples, and pristine beaches of Ratnagiri district.</p>
+<div class="filter-bar">
+<button class="act" onclick="gf('all',this)">All</button>
+<button onclick="gf('beach',this)">Beaches</button>
+<button onclick="gf('fort',this)">Forts</button>
+<button onclick="gf('temple',this)">Temples</button>
+<button onclick="gf('nature',this)">Nature</button>
+</div>
+<div class="gal" id="gal"></div>
+<div class="quiz-section">
+<h2>Guess the District ️</h2>
+<p>Look at the photo and pick which district it belongs to. 10 rounds — how many can you get right?</p>
+<div class="score-bar">
+<div class="score-pill">Score: <span id="qscore">0</span></div>
+<div class="score-pill">Progress: <span id="qasked">0/10</span></div>
+</div>
+<div id="qwrap"></div>
+</div>
+<button id="btt" title="Back to top">↑</button>
+<script src="gallery.js"></script>
+<script src="backtop.js"></script>
+</body>
+</html>

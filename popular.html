@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="popular.css">
+</head>
+<body>
+<h1>Popular Travel Plans</h1>
+<p class="subtitle">Discover the best travel ideas based on trip duration. Whether you have one day or a full week, Ratnagiri offers beaches, temples, forts, and scenic landscapes for every traveler.</p>
+<div class="spots-strip">
+<h2>Top Rated Spots</h2>
+<div class="spots-scroll" id="spots-scroll"></div>
+</div>
+<div class="tab-bar">
+<button class="tab-btn act" id="tb_d1" onclick="swTab('d1')">1 Day</button>
+<button class="tab-btn" id="tb_d3" onclick="swTab('d3')">3 Days</button>
+<button class="tab-btn" id="tb_d5" onclick="swTab('d5')">5 Days</button>
+<button class="tab-btn" id="tb_d7" onclick="swTab('d7')">7 Days</button>
+</div>
+<div class="tab-panel show" id="tp_d1"><div id="tl_d1"></div></div>
+<div class="tab-panel" id="tp_d3"><div id="tl_d3"></div></div>
+<div class="tab-panel" id="tp_d5"><div id="tl_d5"></div></div>
+<div class="tab-panel" id="tp_d7"><div id="tl_d7"></div></div>
+<div class="cost-panel">
+<h3>Trip Cost Estimator</h3>
+<div class="slider-row">
+<label>Hotel rate per room per night: <span class="slider-val" id="sv-hotel">₹2,000/night</span></label>
+<input type="range" id="sl-hotel" min="800" max="12000" value="2000" step="200">
+<div style="display:flex;justify-content:space-between;font-size:11px;color:#888;"><span>Budget ₹800</span><span>Mid ₹3,500</span><span>Luxury ₹12,000</span></div>
+</div>
+<div class="slider-row">
+<label>Food budget per person per day: <span class="slider-val" id="sv-food">₹500/person/day</span></label>
+<input type="range" id="sl-food" min="200" max="2000" value="500" step="100">
+<div style="display:flex;justify-content:space-between;font-size:11px;color:#888;"><span>Local ₹200</span><span>Mid ₹700</span><span>Fine ₹2,000</span></div>
+</div>
+<div class="slider-row">
+<label>Number of people: <span class="slider-val" id="sv-people">2 persons (1 room shared)</span></label>
+<input type="range" id="sl-people" min="1" max="10" value="2" step="1">
+</div>
+<label style="font-size:13px;font-weight:bold;color:#333;display:block;margin-bottom:8px;">Transport type:</label>
+<div class="transport-row">
+<div class="tr-opt act" onclick="setTr('bus',this)"> ST Bus</div>
+<div class="tr-opt" onclick="setTr('car',this)"> Car Rental</div>
+<div class="tr-opt" onclick="setTr('taxi',this)"> Taxi</div>
+</div>
+<div class="cost-breakdown" id="cost-breakdown"></div>
+<div class="cost-result">
+<div class="big" id="cost-result-val">—</div>
+<div class="sub" id="cost-days">Select your trip duration above</div>
+</div>
+</div>
+<div class="plan-badge" id="plan-badge">
+
+<div class="badge-cnt" id="badge-cnt">0</div>
+</div>
+<div class="plan-popup" id="plan-popup">
+<div class="pp-head">
+<h4>My Travel Plan</h4>
+<button class="pp-close" id="pp-cls">×</button>
+</div>
+<div class="pp-body" id="pp-body">
+<p class="pp-empty">No places saved yet.</p>
+</div>
+<button class="pp-clear" id="pp-clr">Clear All</button>
+</div>
+<script src="popular.js"></script>
+</body>
+</html>

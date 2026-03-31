@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+.user-pill{display:flex;align-items:center;gap:8px;}
+.user-pill span{color:rgb(6,6,6);font-weight:bold;font-size:14px;}
+.logout-btn{padding:5px 12px;background:#e63946;color:white;border:none;border-radius:6px;cursor:pointer;font-weight:bold;font-size:13px;}
+.logout-btn:hover{background:#c1121f;}
+</style>
+</head>
+<body class="beach-header">
+<div class="header-container">
+<div class="logo">
+<h2 style="color:rgb(9,9,9);">Welcome to TourRatnagiri</h2>
+</div>
+<div class="header-nav">
+<a href="home.html" target="content">Home</a>
+<a href="popular.html" target="content">Popular</a>
+<a href="hotels.html" target="content">Hotels</a>
+<a href="travel.html" target="content">Travel Tips</a>
+<a href="blog.html" target="content">Blog</a>
+<a href="planner.html" target="content">Planner</a>
+<div id="authArea"></div>
+</div>
+</div>
+<script>
+var u=localStorage.getItem("u");
+var a=document.getElementById("authArea");
+if(u){
+a.innerHTML='<div class="user-pill"><span>'+u+'</span><button class="logout-btn" id="lob">Logout</button></div>';
+document.getElementById("lob").addEventListener("click",function(){
+localStorage.removeItem("u");
+window.top.location.href="Index.html";
+});
+}else{
+a.innerHTML='<a href="login.html" target="content">Login</a>';
+}
+</script>
+</body>
+</html>

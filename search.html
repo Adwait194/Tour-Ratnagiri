@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+body{background:#f0f4f8;background-image:none;padding:20px;box-sizing:border-box;}
+h1{color:#023e8a;}
+.sb-wrap{position:relative;max-width:520px;margin-bottom:20px;}
+#sb{width:100%;padding:12px 16px;font-size:15px;border:2px solid #023e8a;border-radius:8px;box-sizing:border-box;}
+#sb:focus{outline:none;border-color:#0077b6;}
+.cat-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;}
+.cat-btn{padding:6px 14px;border:2px solid #ccd8e8;background:white;color:#023e8a;border-radius:16px;cursor:pointer;font-size:12px;font-weight:bold;}
+.cat-btn.act{background:#023e8a;color:white;border-color:#023e8a;}
+.cat-btn:hover{background:#0077b6;color:white;border-color:#0077b6;}
+#cnt{font-size:13px;color:#666;margin-bottom:12px;}
+.plist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;}
+.pcard{background:white;border-radius:10px;padding:14px;box-shadow:0 2px 8px rgba(0,0,0,0.09);display:flex;gap:12px;align-items:flex-start;}
+.pcard img{width:70px;height:70px;object-fit:cover;border-radius:8px;flex-shrink:0;}
+.pcard .pi h4{margin:0 0 4px 0;color:#023e8a;font-size:14px;}
+.pcard .pi p{margin:0 0 5px 0;font-size:12px;color:#555;line-height:1.4;}
+.pcard .pi span{font-size:10px;background:#e3f0ff;color:#023e8a;padding:2px 8px;border-radius:10px;font-weight:bold;}
+.nores{text-align:center;padding:40px;color:#888;font-size:15px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);}
+</style>
+</head>
+<body>
+<h1>Search Tourist Places</h1>
+<p class="subtitle">Find beaches, forts, temples, and nature spots across all nine districts of Ratnagiri.</p>
+<div class="sb-wrap">
+<input type="text" id="sb" placeholder="Search places, districts, activities...">
+</div>
+<div class="cat-row">
+<button class="cat-btn act" onclick="sc('all',this)">All</button>
+<button class="cat-btn" onclick="sc('beach',this)">Beach</button>
+<button class="cat-btn" onclick="sc('fort',this)">Fort</button>
+<button class="cat-btn" onclick="sc('temple',this)">Temple</button>
+<button class="cat-btn" onclick="sc('nature',this)">Nature</button>
+</div>
+<p id="cnt"></p>
+<div class="plist" id="pl"></div>
+<script src="script.js"></script>
+</body>
+</html>

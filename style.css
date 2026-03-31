@@ -1,0 +1,242 @@
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background-image:url("images/wood.jpg");
+background-size:cover;
+}
+.beach-header{
+background-image:url("images/beach.jpg");
+background-size:100% auto;
+background-position:center;
+background-repeat:no-repeat;
+height:90px;
+display:flex;
+align-items:center;
+}
+.header-container{
+width:100%;
+padding:0 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo{
+color:rgb(11,11,11);
+font-size:30px;
+font-weight:600;
+font-family:'Poppins',sans-serif;
+letter-spacing:1px;
+}
+.header-nav{
+display:flex;
+gap:22px;
+}
+.header-nav a{
+color:rgb(6,6,6);
+text-decoration:none;
+font-weight:bold;
+font-size:large;
+}
+.header-nav a:hover{
+text-decoration:underline;
+}
+h1{color:#03234e;}
+h2{color:#01314b;}
+.mapwrap{
+position:relative;
+width:1000px;
+}
+#preview-box{
+position:absolute;
+top:40px;
+left:600px;
+display:none;
+width:300px;
+background:white;
+border-radius:12px;
+box-shadow:0 0 25px rgba(0,0,0,0.35);
+padding:12px;
+flex-direction:column;
+gap:10px;
+z-index:10;
+}
+#preview-img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+.preview-content h4{
+margin:4px 0 4px 0;
+color:#012554;
+font-size:15px;
+}
+.preview-content p{
+font-size:12.5px;
+line-height:1.5;
+margin:0 0 10px 0;
+color:#444;
+}
+.visit-btn{
+display:block;
+padding:8px 0;
+background:#023e8a;
+color:white;
+text-align:center;
+border-radius:7px;
+font-weight:bold;
+font-size:13px;
+text-decoration:none;
+}
+.visit-btn:hover{
+background:#0077b6;
+color:white;
+}
+.subtitle{
+color:#632e2e;
+font-style:italic;
+max-width:750px;
+}
+.container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:15px;
+}
+.box{
+width:250px;
+background:white;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+transition:0.25s;
+}
+.box:hover{transform:translateY(-6px);}
+.box img{
+width:100%;
+height:160px;
+object-fit:cover;
+display:block;
+}
+.box h3{margin:10px;color:#02316f;}
+.box p{margin:0 10px 10px 10px;color:#000000;}
+a{color:#0077b6;text-decoration:none;}
+.footer{
+background:#023e8a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:14px;
+letter-spacing:0.5px;
+}
+.nav-card{
+background:white;
+margin-bottom:10px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+.nav-card a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:#023e8a;
+font-weight:bold;
+}
+.nav-card a:hover{background:#caf0f8;border-radius:8px;}
+.topnav{
+background:#023e8a;
+display:flex;
+align-items:center;
+gap:30px;
+padding-left:20px;
+}
+.topnav a{color:white;text-decoration:none;font-weight:bold;}
+.topnav a:hover{text-decoration:underline;}
+.rightnav{
+background:#f2f8fb;
+padding:14px;
+overflow-y:auto;
+height:100%;
+box-sizing:border-box;
+}
+.gallery{display:flex;gap:20px;flex-wrap:wrap;}
+.card{
+width:220px;
+background:white;
+border-radius:10px;
+padding:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px;}
+.map-container{
+margin:20px 0;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+.nav-btn{
+display:block;
+padding:9px 12px;
+margin-bottom:8px;
+background:#023e8a;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+font-size:13px;
+text-align:center;
+}
+.nav-btn:hover{background:#0077b6;color:white;}
+.planner{
+border:2px solid #023e8a;
+border-radius:8px;
+padding:18px;
+margin-top:20px;
+background:#f0f8ff;
+max-width:600px;
+}
+.planner legend{
+color:#023e8a;
+font-weight:bold;
+font-size:16px;
+padding:0 8px;
+}
+.planner label{margin-right:14px;font-size:14px;cursor:pointer;}
+.planner select{
+padding:6px;
+margin-top:4px;
+border-radius:4px;
+border:1px solid #aaa;
+font-size:14px;
+}
+.planner textarea{
+width:100%;
+padding:8px;
+border:1px solid #aaa;
+border-radius:4px;
+box-sizing:border-box;
+margin-top:4px;
+font-size:14px;
+resize:vertical;
+}
+.trip-summary{
+max-width:600px;
+margin-top:16px;
+background:#e8f4fb;
+border:2px solid #023e8a;
+border-radius:10px;
+padding:16px 18px;
+}
+.trip-summary h4{
+margin:0 0 10px 0;
+color:#023e8a;
+font-size:15px;
+}
+.trip-summary #fcs{
+font-size:14px;
+line-height:1.8;
+color:#333;
+}

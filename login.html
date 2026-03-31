@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="card-wrap">
+<div class="lw">
+<h2>TourRatnagiri</h2>
+<p class="sub">Login to access your account</p>
+<form id="lf" novalidate>
+<div class="field">
+<label for="un">Username</label>
+<input type="text" id="un" placeholder="Enter your username" autocomplete="off">
+<div class="err-msg"></div>
+</div>
+<div class="field">
+<label for="pw">Password</label>
+<input type="password" id="pw" placeholder="Enter your password">
+<div class="err-msg"></div>
+</div>
+<button type="submit">Login</button>
+</form>
+<p class="hint">Enter any username (min 3 chars) and password (min 4 chars).</p>
+</div>
+</div>
+<div class="success-overlay" id="sov">
+<div class="success-box">
+<span class="tick">&#10003;</span>
+<h3>Login Successful!</h3>
+<p>Welcome, <b id="welcomeName"></b>. Redirecting to Home...</p>
+</div>
+</div>
+<script src="login.js"></script>
+</body>
+</html>

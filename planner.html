@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="planner.css">
+</head>
+<body>
+<h1>Trip Planner</h1>
+<p class="subtitle">Customise your Ratnagiri experience. Your summary updates live as you make selections.</p>
+<fieldset>
+<legend>Trip Duration</legend>
+<div class="row">
+<label><input type="radio" name="dur" value="1"> 1 Day</label>
+<label><input type="radio" name="dur" value="3"> 3 Days</label>
+<label><input type="radio" name="dur" value="5"> 5 Days</label>
+<label><input type="radio" name="dur" value="7"> 7 Days</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Interests</legend>
+<div class="row">
+<label><input type="checkbox" name="int" value="Beach"> Beach</label>
+<label><input type="checkbox" name="int" value="Temple"> Temple</label>
+<label><input type="checkbox" name="int" value="Fort"> Fort</label>
+<label><input type="checkbox" name="int" value="Nature"> Nature</label>
+<label><input type="checkbox" name="int" value="Food"> Food</label>
+<label><input type="checkbox" name="int" value="Culture"> Culture</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Travel Season</legend>
+<select id="ssn">
+<option value="Summer (Mar–May)">Summer (Mar–May) — Mango farms open</option>
+<option value="Monsoon (Jun–Sep)">Monsoon (Jun–Sep) — Lush waterfalls</option>
+<option value="Winter (Oct–Feb)" selected>Winter (Oct–Feb) — Best weather</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Preferred Districts (hold Ctrl for multiple)</legend>
+<select id="dst" multiple size="5">
+<option value="Ratnagiri">Ratnagiri</option>
+<option value="Dapoli">Dapoli</option>
+<option value="Chiplun">Chiplun</option>
+<option value="Guhagar">Guhagar</option>
+<option value="Khed">Khed</option>
+<option value="Lanja">Lanja</option>
+<option value="Mandangad">Mandangad</option>
+<option value="Sangameshwar">Sangameshwar</option>
+<option value="Rajapur">Rajapur</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Special Requests</legend>
+<textarea id="sreq" rows="3" placeholder="Wheelchair access, vegetarian food, child-friendly places..."></textarea>
+</fieldset>
+<div class="fc" id="fc">
+<h4>Your Trip Summary</h4>
+<div class="fc-grid" id="fcg"></div>
+<button class="reset-btn" id="rstbtn">Reset Planner</button>
+</div>
+<script src="planner.js"></script>
+</body>
+</html>

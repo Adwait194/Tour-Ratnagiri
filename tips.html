@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="backtop.css">
+<style>
+body{background:#f0f4f8;background-image:none;padding:20px;box-sizing:border-box;}
+h1{color:#023e8a;}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:18px;}
+.tip-card{background:white;border-radius:12px;padding:18px;box-shadow:0 3px 10px rgba(0,0,0,0.09);border-left:5px solid #023e8a;}
+.tip-card.warn{border-left-color:#e63946;}
+.tip-card.info{border-left-color:#0077b6;}
+.tip-card.green{border-left-color:#2dc653;}
+.tip-card h3{margin:0 0 10px 0;color:#023e8a;font-size:15px;}
+.tip-card.warn h3{color:#e63946;}
+.tip-card.info h3{color:#0077b6;}
+.tip-card.green h3{color:#1a8a3a;}
+.tip-card ul{margin:0;padding-left:16px;line-height:1.9;color:#444;font-size:13px;}
+.season-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
+.season{flex:1;min-width:160px;background:white;border-radius:10px;padding:14px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;}
+.season .sico{font-size:28px;margin-bottom:6px;}
+.season h4{color:#023e8a;margin:0 0 6px 0;font-size:14px;}
+.season p{font-size:12px;color:#555;margin:0;line-height:1.5;}
+</style>
+</head>
+<body>
+<h1>Local Travel Tips</h1>
+<p class="subtitle">Insider tips for a smooth, safe, and memorable trip through Ratnagiri district.</p>
+<div class="tips-grid">
+<div class="tip-card green">
+<h3>Best Practices</h3>
+<ul>
+<li>Carry cash — many coastal villages have no ATMs</li>
+<li>Download offline maps before leaving cities</li>
+<li>Book accommodation in advance during Diwali and Christmas</li>
+<li>Try local homestays for authentic Konkani experience</li>
+<li>Visit mango farms between April and June</li>
+</ul>
+</div>
+<div class="tip-card warn">
+<h3>Safety Warnings</h3>
+<ul>
+<li>Avoid swimming at beaches with red flags</li>
+<li>Do not trek alone in forested areas after sunset</li>
+<li>Monsoon roads near ghats can be slippery and closed</li>
+<li>Keep emergency contacts of local police saved</li>
+<li>Check weather forecasts before boat trips</li>
+</ul>
+</div>
+<div class="tip-card info">
+<h3>Transport Tips</h3>
+<ul>
+<li>ST buses connect all major towns cheaply</li>
+<li>Rent a two-wheeler for flexible coastal exploration</li>
+<li>Konkan Railway covers Ratnagiri, Chiplun, and Khed</li>
+<li>Auto-rickshaws are available in town centres</li>
+<li>Road from Mumbai via NH-66 is the fastest route</li>
+</ul>
+</div>
+<div class="tip-card">
+<h3>Food Tips</h3>
+<ul>
+<li>Try Sol Kadhi — a cooling pink coconut drink</li>
+<li>Malvani fish curry with rice is a must-eat</li>
+<li>Buy Alphonso mangoes directly from farms (seasonal)</li>
+<li>Eat at local dhabas near fishing harbours</li>
+<li>Avoid raw seafood during monsoon season</li>
+</ul>
+</div>
+<div class="tip-card green">
+<h3>Eco-Friendly Travel</h3>
+<ul>
+<li>Carry a reusable water bottle and bags</li>
+<li>Do not litter on beaches — use dustbins</li>
+<li>Do not disturb nesting sea turtles at night</li>
+<li>Buy local handloom and handicrafts as souvenirs</li>
+<li>Report illegal fishing or dumping to forest dept</li>
+</ul>
+</div>
+<div class="tip-card info">
+<h3>Photography Tips</h3>
+<ul>
+<li>Best light for beach shots: 6–8 AM or 5–7 PM</li>
+<li>Ratnadurg Fort offers a panoramic coastal view</li>
+<li>Monsoon waterfalls are stunning but roads can close</li>
+<li>Always ask permission before photographing locals</li>
+<li>Drone flying requires prior government permission</li>
+</ul>
+</div>
+</div>
+<h2 style="color:#023e8a;margin-top:28px;">Best Time to Visit by Season</h2>
+<div class="season-row">
+<div class="season"><div class="sico"></div><h4>Summer (Mar–May)</h4><p>Hot and dry. Best for mango farms and fort visits. Avoid beach afternoons.</p></div>
+<div class="season"><div class="sico"></div><h4>Monsoon (Jun–Sep)</h4><p>Lush green hills and waterfalls. Roads can flood. Best for nature lovers.</p></div>
+<div class="season"><div class="sico"></div><h4>Winter (Oct–Feb)</h4><p>Perfect weather for beaches, trekking, and sightseeing. Peak tourist season.</p></div>
+</div>
+<button id="btt" title="Back to top">↑</button>
+<script src="backtop.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+body{background:#f0f4f8;background-image:none;}
+.bw{max-width:720px;margin:0 auto;padding:20px;}
+h1{color:#023e8a;margin-bottom:4px;}
+#wp{color:#023e8a;font-weight:bold;font-size:14px;margin:0 0 10px 0;}
+#nm{background:#fff3cd;padding:14px;border-radius:8px;color:#856404;font-weight:bold;display:none;font-size:14px;}
+.bf-wrap{background:white;border-radius:12px;padding:20px;box-shadow:0 3px 12px rgba(0,0,0,0.09);margin-bottom:24px;}
+.bf-wrap h2{color:#023e8a;margin-top:0;}
+#bf input,#bf textarea{width:100%;padding:10px 12px;margin-top:10px;border:1px solid #c5d5e8;border-radius:7px;box-sizing:border-box;font-size:14px;font-family:Arial,sans-serif;}
+#bf input:focus,#bf textarea:focus{outline:none;border-color:#0077b6;}
+#bf button{margin-top:14px;padding:10px 28px;background:#023e8a;color:white;border:none;border-radius:7px;cursor:pointer;font-size:14px;font-weight:bold;}
+#bf button:hover{background:#0077b6;}
+.bpost{background:white;border-radius:10px;padding:18px;margin-bottom:14px;box-shadow:0 3px 10px rgba(0,0,0,0.09);}
+.bpost-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;}
+.bpost h3{color:#023e8a;margin:0;font-size:16px;}
+.del-btn{padding:5px 12px;background:#e63946;color:white;border:none;border-radius:6px;cursor:pointer;font-size:12px;font-weight:bold;flex-shrink:0;margin-left:10px;}
+.del-btn:hover{background:#c1121f;}
+.bpost p{margin:0 0 10px 0;line-height:1.6;color:#333;font-size:14px;}
+.bpost small{color:#888;font-size:12px;}
+#bl-head{display:flex;justify-content:space-between;align-items:center;}
+#bl-head h2{color:#023e8a;margin:0;}
+#clrbtn{padding:7px 14px;background:#555;color:white;border:none;border-radius:6px;cursor:pointer;font-size:12px;display:none;}
+#clrbtn:hover{background:#333;}
+</style>
+</head>
+<body>
+<div class="bw">
+<h1>Tourist Blog</h1>
+<p id="wp"></p>
+<div id="nm">Please log in to post a blog entry. <a href="login.html" target="_top" style="color:#023e8a;">Login here</a></div>
+<div class="bf-wrap" id="bfw" style="display:none;">
+<h2>Share Your Experience</h2>
+<form id="bf">
+<input type="text" id="bt" placeholder="Post Title (e.g. My trip to Ganpatipule Beach)" required>
+<textarea id="bc" rows="5" placeholder="Write about your experience in Ratnagiri..." required></textarea>
+<button type="submit">Publish Post</button>
+</form>
+</div>
+<div id="bl-head">
+<h2>Recent Posts</h2>
+<button id="clrbtn" onclick="clrB()">Clear All</button>
+</div>
+<div id="bl"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
